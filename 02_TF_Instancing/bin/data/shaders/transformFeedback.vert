@@ -3,7 +3,7 @@
 #define PI 3.14159265358979
 
 #pragma include "util.glsl"
-#pragma include "noise4d.glsl"
+#pragma include "noise.glsl"
 
 in vec3 inPosition;
 in vec3 inVelocity;

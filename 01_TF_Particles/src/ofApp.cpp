@@ -7,14 +7,14 @@ void ofApp::setup(){
     ofBackground(0);
     
     float * position = new float[numParticles * 3];
-    for(int i = 0; i<numParticles; i+=3){
+    for(int i = 0; i<numParticles; i++){
         position[i * 3 + 0] = ofRandom(-10, 10);
         position[i * 3 + 1] = ofRandom(-10, 10);
         position[i * 3 + 2] = ofRandom(-10, 10);
     }
     
     float * velocity = new float[numParticles * 3];
-    for(int i = 0; i<numParticles; i+=3){
+    for(int i = 0; i<numParticles; i++){
         velocity[i * 3 + 0] = ofRandom(-1, 1);
         velocity[i * 3 + 1] = ofRandom(-1, 1);
         velocity[i * 3 + 2] = ofRandom(-1, 1);

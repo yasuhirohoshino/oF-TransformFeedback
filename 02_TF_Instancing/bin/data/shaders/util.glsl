@@ -1,41 +1,5 @@
 #define PI 3.14159265358979
 
-//
-// Description : Array and textureless GLSL 2D/3D/4D simplex
-//               noise functions.
-//      Author : Ian McEwan, Ashima Arts.
-//  Maintainer : ijm
-//     Lastmod : 20110822 (ijm)
-//     License : Copyright (C) 2011 Ashima Arts. All rights reserved.
-//               Distributed under the MIT License. See LICENSE file.
-//               https://github.com/ashima/webgl-noise
-//
-vec4 mod289(vec4 x) {
-    return x - floor(x * (1.0 / 289.0)) * 289.0;
-}
-
-float mod289(float x) {
-    return x - floor(x * (1.0 / 289.0)) * 289.0;
-}
-
-vec4 permute(vec4 x) {
-    return mod289(((x*34.0)+1.0)*x);
-}
-
-float permute(float x) {
-    return mod289(((x*34.0)+1.0)*x);
-}
-
-vec4 taylorInvSqrt(vec4 r)
-{
-    return 1.79284291400159 - 0.85373472095314 * r;
-}
-
-float taylorInvSqrt(float r)
-{
-    return 1.79284291400159 - 0.85373472095314 * r;
-}
-
 // excerpt from https://github.com/andreasmuller/NoiseWorkshop
 mat4 makeLookAt(vec3 eye, vec3 center, vec3 up)
 {
